@@ -1,0 +1,144 @@
+body{
+    background: #f3f3f3;
+    cursor: default;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    background: #ebebeb;
+    width: 500px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s linear;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.app:hover{
+    box-shadow: 4px 4px 10px 10px rgb(78, 78, 78);
+    border-radius: 20px;
+}
+
+.value{
+    width: 90%;
+    height: 25%;
+    background-color: #ebebeb;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 4;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center; 
+    margin-top: 15px;
+}
+
+button{
+    width: 85px;
+    height: 85px;
+    margin: 5px;
+    border-radius: 0px;
+    border: none;
+    background: #ffffff;
+    transition: all 0.2s linear;
+    border-radius: 20%;
+}
+
+input[type='text']{
+    border: none;
+    outline: none;
+    background: #ebebeb;
+    font-size: 90px;
+    width: 90%;
+    float: right;
+    text-align: right;
+    margin-top: 25%;
+    font-weight: 200;
+    cursor: default;
+}
+
+
+#number:focus{
+    outline: none;
+    cursor: default;
+}
+
+.operation-buttons{
+    background: #615fe0;
+    color: white;
+}
+
+.operation-cls{
+    background: #d3d3d3;
+    font-size: 15px;
+}
+
+#flexSwitchCheckDefault{
+    width: 125px;
+    height: 50px;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 10px;
+}
+
+#flexSwitchCheckDefault:checked{
+    background-color: #615fe0;
+    outline: none;
+}
+
+#flexSwitchCheckDefault:focus{
+    outline: none;
+}
+
+.dark{
+    background: #343432;
+    color: white;
+}
+
+.light{
+    background: white;
+    color: black;
+}
+
+.dark .app{
+    background: #323231;
+    color: white;
+}
+
+.dark .app:hover{
+    box-shadow: 4px 4px 10px 10px rgb(37, 37, 37);
+}
+
+.dark .value{
+    background: #323231;
+    color: white;
+}
+
+.dark input[type='text']{
+    background: #323231;
+    color: white;
+}
+
+.dark button{
+    background: #5f5f5f;
+    color: white;
+}
+
+.dark .operation-buttons{
+    background: #615fe0;
+    color: white;
+}
+
+.dark .operation-cls{
+    background: #585858;
+    font-size: 15px;
+}
